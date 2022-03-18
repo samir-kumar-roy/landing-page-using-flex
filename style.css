@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 78%;
+    margin: auto;
+    display: flex;
+}
+p{
+    font-size: 16px;
+    color: #000000;
+}
+h1,h2, header a{
+    color: #385F96;
+}
+.btn{
+    background-color: #385F96;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.header-container{
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.header-container nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    font-size: 20px;
+}
+.header-container .logo h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.hero-container .text,
+.team-container .text,
+.project-container .text{
+    flex-basis: 50%;
+} 
+.hero-container .text p,
+.team-container .text p,
+.project-container .text p{
+    width: 500px;
+} 
+.project{
+    background-color: #6DDBE1;
+
+}
+.hero, .team{
+    margin-bottom: 70px;
+}
+.hero-container,
+.team-container{
+    justify-content: space-between;
+}
+.hero-container .text h1{
+    position: relative;
+    font-size: 48px;
+    
+}
+.hero-container .text h1::before{
+
+    position: absolute;
+    content: "";
+    height: 186px;
+    width: 179px;
+    background-image: url("images/bubble.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: -80px;
+    left: -88px;
+}
+.hero-container .text h1 span{
+    display: inline-block;
+    position: relative;
+    padding: 0 5px;
+    height: fit-content;
+}
+.hero-container .text h1 span::before{
+    position: absolute;
+    content: "";
+    width: 254px;
+    height: 4px;
+    left: 0;
+    top: 50%;
+    background-color: #6DDBE1;
+    opacity: 0.4;
+}
+.project-container .text h2{
+    position: relative;
+    font-size: 35px;
+    
+}
+.hero-container .image img,
+.team-container .image img,
+.project-container .image img{
+    height: 435px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+.team-container .text h2{
+    position: relative;
+}
+.team-container .text h2::before{
+
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 55px;
+    background-color: #6DDBE1;
+    top: -10px;
+
+}
+.project-container{
+    padding-top: 50px;
+}
+.project-container .text{
+    position: relative;
+    padding-top: 60px;
+}
+.project-container .text::before{
+
+    position: absolute;
+    content: "";
+    height: 186px;
+    width: 179px;
+    background-image: url("images/small-bubble.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: -105px;
+
+}
+.credit{
+    background-color: #385f96;
+    height: 70px;
+   
+}
+.credit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.credit-container p {
+    color: #fff;
+    font-size: 16px;
+}
+.credit-container span{
+    color: red;
+    outline: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+}
